@@ -1,6 +1,6 @@
 import { Typography, Stack, Box, Button, TextField } from '@mui/material'
 import {React, useEffect, useState} from 'react'
-import { exerciseOptions, fetchData } from '../utls/fetchData'
+import { exerciseOptions, fetchData } from '../utils/fetchData'
 import HorizontalScrollbar from './HorizontalScrollbar'
 
 const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
