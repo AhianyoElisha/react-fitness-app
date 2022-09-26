@@ -34,6 +34,7 @@ useEffect(() => {
           setsearch('')
           setExercises(searchedExercises)
     }
+    window.scrollTo( { top: 1800, behavior: 'smooth'})
   }
   return (
       <Stack justifyContent='center' alignItems='center' mt='37px' p='20px'>
@@ -73,7 +74,7 @@ useEffect(() => {
           >Search</Button>
         </Box>
         <Box sx={{ position: 'relative', width: '100%', p: '20px'}}>
-           <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart}/>
+           <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} isBodyParts/>
         </Box>
       </Stack>
   )
